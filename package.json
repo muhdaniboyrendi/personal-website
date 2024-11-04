@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "aos": "^2.3.4",
