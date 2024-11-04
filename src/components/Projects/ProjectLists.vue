@@ -1,15 +1,19 @@
 <script setup>
-const props = defineProps(['title', 'text'])
+const publicPath = import.meta.env.BASE_URL
+
+const props = defineProps(['title', 'text', 'img'])
+
+const imagePaths = `${publicPath}images/${props.img}`
 </script>
 
 <template>
   <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
     <div class="card">
-      <img src="" class="card-img-top" alt="...">
+      <img :src="imagePaths" alt="project" class="m-3">
       <div class="card-body">
         <h5 class="card-title">{{ props.title }}</h5>
         <p class="card-text">{{ props.text }}</p>
-        <RouterLink to="/projects" class="btn mt-3 project-view" aria-current="page">Learn more &raquo;</RouterLink>
+        <RouterLink to="/projects" class="btn project-view" aria-current="page">Learn more &raquo;</RouterLink>
       </div>
     </div>
   </div>

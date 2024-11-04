@@ -1,4 +1,11 @@
 <script setup>
+const publicPath = import.meta.env.BASE_URL
+
+const imagePaths = {
+  grasius: `${publicPath}images/grasius.PNG`,
+  onlineShop: `${publicPath}images/online-shop.PNG`,
+  icon: `${publicPath}images/icons/icon1.svg`
+}
 </script>
 
 <template>
@@ -12,21 +19,21 @@
     <div class="row mt-3 mb-5">
       <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
         <div class="card">
-          <img src="" class="card-img-top" alt="...">
+          <img :src="imagePaths.grasius" alt="project" class="m-3">
           <div class="card-body">
             <h5 class="card-title">Grasius</h5>
             <p class="card-text">Application for student management and attendance system with QR Code. Developed with Laravel, Livewire, Bootstrap</p>
-            <RouterLink to="/projects" class="btn mt-3 project-view" aria-current="page">Learn more &raquo;</RouterLink>
+            <RouterLink to="/projects" class="btn project-view" aria-current="page">Learn more &raquo;</RouterLink>
           </div>
         </div>
       </div>
       <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
         <div class="card">
-          <img src="" class="card-img-top" alt="...">
+          <img :src="imagePaths.onlineShop" alt="project">
           <div class="card-body">
             <h5 class="card-title">Online Shop</h5>
             <p class="card-text">Simple online shop application with admin and customer pages. Developed with Laravel, Bootstrap</p>
-            <RouterLink to="/projects" class="btn mt-3 project-view" aria-current="page">Learn more &raquo;</RouterLink>
+            <RouterLink to="/projects" class="btn project-view" aria-current="page">Learn more &raquo;</RouterLink>
           </div>
         </div>
       </div>
