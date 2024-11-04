@@ -1,0 +1,31 @@
+{
+  "name": "personal-website",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/",
+    "deploy": "vite build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "gsap": "^3.12.5",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/eslint-config-prettier": "^10.0.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-vue": "^9.29.0",
+    "gh-pages": "^6.2.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.10"
+  }
+}
