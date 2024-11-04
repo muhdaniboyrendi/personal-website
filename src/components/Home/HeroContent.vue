@@ -7,7 +7,7 @@ const medias = [
       'https://www.instagram.com/erlan.azr_?igsh=MTN3anUxNDZiZjA4MA==',
       'https://www.threads.net/@erlan.azr_?invite=0',
       'https://github.com/muhdaniboyrendi',
-      'https://www.linkedin.com/in/boyrendi-erlan-93bb48310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      'https://www.linkedin.com/in/muhdani-boyrendi/',
       'mailto:erlanazrdev@gmail.com',
       'https://wa.me/+6282220633024'
     ],
@@ -24,7 +24,7 @@ const medias = [
 </script>
 
 <template>
-  <div class="row mb-5 py-3">
+  <div class="row mb-5 py-3" data-aos="fade-up" data-aos-offset="300">
     <div class="col-md-5 text-center">
       <img src="/images/profile.jpg" alt="Muhdani Boyrendi Erlan Azhari" width="200" class="rounded-circle"/>
     </div>

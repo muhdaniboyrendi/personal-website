@@ -7,7 +7,7 @@
       <h3 data-aos="fade-up" data-aos-offset="200">Experiences</h3>
     </div>
   </div>
-  <div class="row mt-3">
+  <div class="row mt-3 mb-5">
     <div class="col-md-6" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
       <div class="card">
         <div class="card-body">

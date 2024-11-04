@@ -17,7 +17,7 @@ const todoListAppText = 'Simple Todo List App with featues add, delete, and done
         <ProjectLists title="Grasius" :text="grasiusText" />
         <ProjectLists title="Online Shop" :text="onlineshopText" />
       </div>
-      <div class="row">
+      <div class="row mb-5">
         <ProjectLists title="Note App" :text="noteAppText" />
         <ProjectLists title="Todo List App" :text="todoListAppText" />
       </div>
