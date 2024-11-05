@@ -1,5 +1,5 @@
 <template>
-  <div class="row mt-5" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+  <div class="row my-5" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
     <div class="col-md-6 mb-4">
       <div class="card">
         <div class="card-body ps-4 pt-4">

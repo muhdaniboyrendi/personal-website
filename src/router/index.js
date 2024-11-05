@@ -13,21 +13,32 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),
+      meta: { title: 'Muhdani Boyrendi Erlan Azhari | About' },
     },
     {
       path: '/projects',
       name: 'projects',
       component: () => import('../views/ProjectsView.vue'),
+      meta: { title: 'Muhdani Boyrendi Erlan Azhari | Projects' },
+    },
+    {
+      path: '/projects/:name',
+      name: 'projectDetails',
+      component: () => import('../components/Projects/projectDetails.vue'),
+      props: true,
+      meta: { title: 'Muhdani Boyrendi Erlan Azhari | Projects' },
     },
     {
       path: '/equipments',
       name: 'equipments',
       component: () => import('../views/EquipmentsView.vue'),
+      meta: { title: 'Muhdani Boyrendi Erlan Azhari | Equipments' },
     },
     {
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue'),
+      meta: { title: 'Muhdani Boyrendi Erlan Azhari | Contact' },
     },
   ],
 })

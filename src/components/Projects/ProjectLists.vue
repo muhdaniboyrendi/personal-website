@@ -1,20 +1,19 @@
 <script setup>
 const publicPath = import.meta.env.BASE_URL
 
-const props = defineProps(['title', 'text', 'img', 'param'])
+const props = defineProps(['datas'])
 
-const imagePaths = `${publicPath}images/${props.img}`
-const path = `/projects/${props.param}`
+const imagePaths = `${publicPath}images/${props.datas[0].img}`
 </script>
 
 <template>
   <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
     <div class="card">
       <img :src="imagePaths" alt="project" class="m-3 mb-0">
-      <div class="card-body">
-        <h5 class="card-title">{{ props.title }}</h5>
-        <p class="card-text">{{ props.text }}</p>
-        <RouterLink :to="path" class="btn project-view" aria-current="page">Learn more &raquo;</RouterLink>
+      <div class="card-body" v-for="(data, index) in datas" :key="index">
+        <h5 class="card-title">{{ data.title }}</h5>
+        <p class="card-text">{{ data.text }}</p>
+        <RouterLink :to="{ name: 'projectDetails', params: { name: data.param }}" class="btn project-view">Learn more &raquo;</RouterLink>
       </div>
     </div>
   </div>
