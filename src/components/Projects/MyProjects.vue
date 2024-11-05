@@ -14,12 +14,12 @@ const todoListAppText = 'Simple Todo List App with featues add, delete, and done
         Some projects I have worked on
       </span>
       <div class="row mt-3">
-        <ProjectLists title="Grasius" :text="grasiusText" img="grasius.PNG" />
-        <ProjectLists title="Online Shop" :text="onlineshopText" img="online-shop.PNG" />
+        <ProjectLists title="Grasius" :text="grasiusText" img="grasius.PNG" param="grasius" />
+        <ProjectLists title="Online Shop" :text="onlineshopText" img="online-shop.PNG" param="online-shop" />
       </div>
       <div class="row mb-5">
-        <ProjectLists title="Note App" :text="noteAppText" img="notes.PNG" />
-        <ProjectLists title="Todo List App" :text="todoListAppText" img="todo-list.PNG" />
+        <ProjectLists title="Note App" :text="noteAppText" img="notes.PNG" param="note-app" />
+        <ProjectLists title="Todo List App" :text="todoListAppText" img="todo-list.PNG" param="todo-list-app" />
       </div>
     </div>
   </div>

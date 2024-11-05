@@ -4,7 +4,7 @@
 <template>
   <div class="row mt-5">
     <div class="col">
-      <h3 data-aos="fade-up" data-aos-offset="200">Experiences</h3>
+      <h2 data-aos="fade-up" data-aos-offset="200">Experiences</h2>
     </div>
   </div>
   <div class="row mt-3 mb-5">
@@ -26,7 +26,7 @@
             </svg>
             Surakarta, Indonesia
           </p>
-          <a href="https://www.solonet.net.id/" class="btn mt-2">Visit</a>
+          <a href="https://www.solonet.net.id/" class="btn mt-2" target="_blank">Visit</a>
         </div>
       </div>
     </div>
@@ -34,12 +34,13 @@
 </template>
 
 <style scoped>
-h3 {
+h2 {
   color: #E5E9F0;
 }
 .card {
   background-color: #121B23;
   border: 1px solid #309EC7;
+  border-radius: 20px;
 }
 .title {
   color: #E5E9F0;
@@ -47,6 +48,9 @@ h3 {
 }
 .badge {
   background-color: #309EC7;
+  color: #0A0F14;
+  font-weight: 500;
+  border-radius: 10px
 }
 p {
   color: #AAB6C5;
@@ -54,9 +58,11 @@ p {
 .btn {
   border: 1px solid #309EC7;
   color: #309EC7;
+  border-radius: 10px;
 }
 .btn:hover {
   background-color: #40D2FF;
   color: #0A0F14;
+  box-shadow: 0 0 10px #309EC7;
 }
 </style>

@@ -9,7 +9,7 @@ const beItems = ['Laravel', 'MySQL', 'SQLite']
 <template>
   <div class="row mt-5">
     <div class="col">
-      <h3 data-aos="fade-up" data-aos-offset="200">Skills</h3>
+      <h2 data-aos="fade-up" data-aos-offset="200">Skills</h2>
     </div>
   </div>
   <div class="row mt-3 mb-5">
@@ -22,7 +22,7 @@ const beItems = ['Laravel', 'MySQL', 'SQLite']
 </template>
 
 <style scoped>
-h3 {
+h2 {
   color: #E5E9F0;
 }
 </style>

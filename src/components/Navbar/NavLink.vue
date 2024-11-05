@@ -8,7 +8,7 @@ const path = props.path
 
 <template>
   <li class="nav-item ms-2">
-    <RouterLink :to="path" class="nav-link" aria-current="page"><span>{{ props.title }}</span></RouterLink>
+    <router-link :to="path" class="nav-link" active-class="active" aria-current="page"><span>{{ props.title }}</span></router-link>
   </li>
 </template>
 
@@ -18,10 +18,12 @@ li span {
 }
 li:hover {
   transition: ease-in 0.2s;
-  transform: scale(1.05);
 }
 li:hover span {
   transition: ease-in 0.2s;
+  color: #40d2ff;
+}
+li .active span{
   color: #40d2ff;
 }
 </style>

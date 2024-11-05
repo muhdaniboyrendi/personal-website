@@ -2,14 +2,13 @@
   <div class="row mt-5" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
     <div class="col-md-6 mb-4">
       <div class="card">
-        <div class="card-body">
-          <h5>Software</h5>
-          <hr>
+        <div class="card-body ps-4 pt-4">
+          <h5 class="mb-3">Software</h5>
           <ul>
-            <li><b>Editor :</b> Visual Studio Code</li>
-            <li><b>Database Viewer :</b> TablePlus</li>
-            <li><b>REST API Tester :</b> Postman</li>
-            <li><b>Others :</b>
+            <li><span>Editor :</span> Visual Studio Code</li>
+            <li><span>Database Viewer :</span> TablePlus</li>
+            <li><span>REST API Tester :</span> Postman</li>
+            <li><span>Others :</span>
               <ul>
                 <li>Git</li>
                 <li>Herd</li>
@@ -22,16 +21,15 @@
     </div>
     <div class="col-md-6">
       <div class="card">
-        <div class="card-body">
-          <h5>Hardware</h5>
-          <hr>
+        <div class="card-body ps-4 pt-4">
+          <h5 class="mb-3">Hardware</h5>
           <ul>
-            <li><b>Laptop :</b> Acer Travelmate</li>
-            <li><b>Keyboard :</b> Rexus Legionare MX 5.1</li>
-            <li><b>Mouse :</b> Logitech M100R</li>
-            <li><b>Deskmat :</b> Orico</li>
-            <li><b>TWS :</b> Realme Buds T100</li>
-            <li><b>Phone :</b> Samsung Galaxy A35</li>
+            <li><span>Laptop :</span> Acer Travelmate</li>
+            <li><span>Keyboard :</span> Rexus Legionare MX 5.1</li>
+            <li><span>Mouse :</span> Logitech M100R</li>
+            <li><span>Deskmat :</span> Orico</li>
+            <li><span>TWS :</span> Realme Buds T100</li>
+            <li><span>Phone :</span> Samsung Galaxy A35</li>
           </ul>
         </div>
       </div>
@@ -49,8 +47,9 @@ li {
 .card {
   background-color: #121B23;
   border: 1px solid #309EC7;
+  border-radius: 20px
 }
-hr {
+span {
   color: #E5E9F0;
 }
 </style>

@@ -33,7 +33,7 @@ nav {
   -webkit-backdrop-filter: blur(10px);
   background-color: #121B23 ;
   box-shadow: 0 0 15px #40d2ff;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 button svg {
   color: #40d2ff;

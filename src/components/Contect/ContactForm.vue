@@ -1,21 +1,16 @@
 <script setup>
 import { ref } from 'vue'
 
-// Constants
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyzH7zYjHXVDsB0DjIncPO3smukF9iBAHfGR6dmMC0DK8rNrUMrX18XAuskm-YkFF9S2g/exec'
 
-// Refs
 const contactForm = ref(null)
 const isLoading = ref(false)
 const showAlert = ref(false)
 
-// Methods
 const handleSubmit = async () => {
   try {
-    // Tampilkan loading state
     isLoading.value = true
 
-    // Kirim data form
     const formData = new FormData(contactForm.value)
     const response = await fetch(SCRIPT_URL, {
       method: 'POST',
@@ -26,20 +21,14 @@ const handleSubmit = async () => {
       throw new Error('Network response was not ok')
     }
 
-    // Reset form
     contactForm.value.reset()
 
-    // Tampilkan alert success
     showAlert.value = true
 
-    // Log success
     console.log('Success!', response)
   } catch (error) {
-    // Handle error
     console.error('Error!', error.message)
-    // Opsional: tambahkan state untuk menampilkan error alert
   } finally {
-    // Sembunyikan loading state
     isLoading.value = false
   }
 }
@@ -96,6 +85,7 @@ const handleSubmit = async () => {
 .card {
   background-color: #121B23;
   border: 1px solid #309EC7;
+  border-radius: 20px;
 }
 label {
   color: #E5E9F0;
@@ -104,16 +94,19 @@ label {
   background-color: #0A0F14;
   border: 1px solid #309EC7;
   color: #AAB6C5;
+  border-radius: 10px;
 }
 .btn {
   background-color: #121B23;
   border: 1px solid #309EC7;
   color: #E5E9F0;
+  border-radius: 10px;
 }
 .btn:hover {
   background-color: #309EC7;
   border: 1px solid #309EC7;
   color: #121B23;
+  box-shadow: 0 0 10px #309EC7;
 }
 .alert {
   background-color: #002214;

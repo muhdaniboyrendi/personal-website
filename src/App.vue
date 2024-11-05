@@ -5,7 +5,7 @@ import MainFooter from './components/Footer/MainFooter.vue'
 </script>
 
 <template>
-  <div class="d-flex flex-column min-vh-100">
+  <div class="d-flex flex-column min-vh-100 main-container">
     <MainNavbar />
 
     <main class="px-3">
@@ -16,8 +16,11 @@ import MainFooter from './components/Footer/MainFooter.vue'
   </div>
 </template>
 
-<style scoped>
+<style>
 div {
+  font-family: "Sniglet", system-ui;
+}
+.main-container {
   background-color: #0A0F14;
 }
 </style>
