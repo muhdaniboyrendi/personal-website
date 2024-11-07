@@ -16,9 +16,9 @@ const sourceCode = currentProject.value.source
 </script>
 
 <template>
-  <div class="container" v-if="currentProject">
-    <h1 class="my-5 pt-5">{{ currentProject.title }}</h1>
-    <div class="row justify-content-center">
+  <div class="container mb-5" v-if="currentProject">
+    <h1 class="my-5 pt-5" data-aos="fade-up" data-aos-offset="300">{{ currentProject.title }}</h1>
+    <div class="row justify-content-center" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
       <div class="col-md-8">
         <div class="card p-3 mb-4">
           <img :src="imagePaths+ '/' +currentProject.img" alt="project">
@@ -42,7 +42,7 @@ const sourceCode = currentProject.value.source
         </ul>
       </div>
     </div>
-    <router-link :to="{ name: 'projects' }" class="btn">Kembali</router-link>
+    <router-link :to="{ name: 'projects' }" class="btn" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500">Kembali</router-link>
   </div>
 </template>
 

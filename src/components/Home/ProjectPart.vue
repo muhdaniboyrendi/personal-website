@@ -23,7 +23,6 @@ const imagePaths = {
           <div class="card-body">
             <h5 class="card-title">Grasius</h5>
             <p class="card-text">Application for student management and attendance system with QR Code. Developed with Laravel, Livewire, Bootstrap</p>
-            <RouterLink to="/projects" class="btn project-view" aria-current="page">Learn more &raquo;</RouterLink>
           </div>
         </div>
       </div>
@@ -33,7 +32,6 @@ const imagePaths = {
           <div class="card-body">
             <h5 class="card-title">Online Shop</h5>
             <p class="card-text">Simple online shop application with admin and customer pages. Developed with Laravel, Bootstrap</p>
-            <RouterLink to="/projects" class="btn project-view" aria-current="page">Learn more &raquo;</RouterLink>
           </div>
         </div>
       </div>

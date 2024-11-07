@@ -1,5 +1,6 @@
 <script setup>
 import AboutMe from '@/components/About/AboutMe.vue';
+import MyEducation from '@/components/About/MyEducation.vue';
 import MyExperience from '@/components/About/MyExperience.vue';
 import MySkills from '@/components/About/MySkills.vue';
 
@@ -15,6 +16,8 @@ import MySkills from '@/components/About/MySkills.vue';
         <MySkills />
         <hr>
         <MyExperience />
+        <hr>
+        <MyEducation />
 
     </div>
   </div>

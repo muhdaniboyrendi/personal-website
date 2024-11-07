@@ -32,7 +32,6 @@ const imagePaths = `${publicPath}images/`
                 <h5 class="card-title">{{ project.title }}</h5>
                 <p class="card-text">{{ project.description }}</p>
                 <button class="btn project-view" @click="goToDetail(project)">Learn more &raquo;</button>
-                <!-- <RouterLink :to="{ name: 'projectDetails', params: { name: data.param }}" class="btn project-view">Learn more &raquo;</RouterLink> -->
               </div>
             </div>
           </div>
@@ -51,6 +50,8 @@ span {
 }
 .card {
   background-color: #121B23;
+  border: 1px solid #309EC7;
+  border-radius: 20px;
 }
 .card-title {
   color: #E5E9F0;
