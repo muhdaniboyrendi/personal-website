@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.5",
+    "pinia": "^2.2.6",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },

@@ -22,8 +22,8 @@ const router = createRouter({
       meta: { title: 'Muhdani Boyrendi Erlan Azhari | Projects' },
     },
     {
-      path: '/projects/:name',
-      name: 'projectDetails',
+      path: '/projects/:id',
+      name: 'project-details',
       component: () => import('../components/Projects/projectDetails.vue'),
       props: true,
       meta: { title: 'Muhdani Boyrendi Erlan Azhari | Projects' },

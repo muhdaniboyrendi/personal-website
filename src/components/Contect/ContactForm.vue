@@ -36,7 +36,7 @@ const handleSubmit = async () => {
 
 <template>
   <div class="row my-5">
-    <div class="col-md-7" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+    <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
       <div class="card">
         <div class="card-body p-3">
 
@@ -76,7 +76,7 @@ const handleSubmit = async () => {
         </div>
       </div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
     </div>
   </div>
 </template>

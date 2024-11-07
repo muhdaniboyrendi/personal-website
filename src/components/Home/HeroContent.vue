@@ -24,7 +24,7 @@ const medias = [
 </script>
 
 <template>
-  <div class="row mb-5 py-3" data-aos="fade-up" data-aos-offset="300">
+  <div class="row mb-5 py-3" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500">
     <div class="col-md-5 text-center">
       <img src="/images/profile.jpg" alt="Muhdani Boyrendi Erlan Azhari" width="200" class="rounded-circle"/>
     </div>

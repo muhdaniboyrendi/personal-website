@@ -1,46 +1,20 @@
 <script setup>
-import ProjectLists from './ProjectLists.vue';
+import { useRouter } from 'vue-router'
+import { useProjectStore } from '@/stores/projectStore'
 
-const projectDatas = [
-  {
-    grasius: [
-      {
-        title: 'Grasius',
-        text: 'Application for student management and attendance system with QR Code.',
-        img: 'grasius.PNG',
-        param: 'grasius',
-        tech: ['Laravel', 'Livewire', 'Bootstrap'],
-      }
-    ],
-    onlineShop: [
-      {
-        title: 'Online Shop',
-        text: 'Simple online shop application with admin and customer pages.',
-        img: 'online-shop.PNG',
-        param: 'online-shop',
-        tech: ['Laravel', 'Bootstrap'],
-      }
-    ],
-    noteApp: [
-      {
-        title: 'Note App',
-        text: 'Simple Notes App with features add, delete, archive, and search notes.',
-        img: 'notes.PNG',
-        param: 'note-app',
-        tech: ['React JS', 'Bootstrap'],
-      }
-    ],
-    todoApp: [
-      {
-        title: 'Todo List App',
-        text: 'Simple Todo List App with featues add, delete, and done todo.',
-        img: 'todo-list.PNG',
-        param: 'todo-app',
-        tech: ['Vue JS', 'Bootstrap'],
-      }
-    ],
-  }
-]
+const publicPath = import.meta.env.BASE_URL
+const router = useRouter()
+const projectStore = useProjectStore()
+
+const goToDetail = (project) => {
+  projectStore.setSelectedProject(project)
+  router.push({
+    name: 'project-details',
+    params: { id: project.id }
+  })
+}
+
+const imagePaths = `${publicPath}images/`
 </script>
 
 <template>
@@ -49,14 +23,19 @@ const projectDatas = [
       <span data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
         Some projects I have worked on
       </span>
-      <div class="div" v-for="(projectData, index) in projectDatas" :key="index">
+      <div class="div">
         <div class="row mt-3">
-          <ProjectLists :datas="projectData.grasius" />
-          <ProjectLists :datas="projectData.onlineShop" />
-        </div>
-        <div class="row mb-5">
-          <ProjectLists :datas="projectData.noteApp" />
-          <ProjectLists :datas="projectData.todoApp" />
+          <div class="col-md-6 mb-4" v-for="project in projectStore.projects" :key="project.id" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
+            <div class="card">
+              <img :src="imagePaths+ '/' +project.img" alt="project" class="m-3 mb-0">
+              <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <button class="btn project-view" @click="goToDetail(project)">Learn more &raquo;</button>
+                <!-- <RouterLink :to="{ name: 'projectDetails', params: { name: data.param }}" class="btn project-view">Learn more &raquo;</RouterLink> -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -78,5 +57,15 @@ span {
 }
 .card-text {
   color: #AAB6C5;
+}
+.project-view {
+  border: 1px solid #309EC7;
+  color: #309EC7;
+  border-radius: 10px;
+}
+.project-view:hover {
+  background-color:#309EC7;
+  color: #0A0F14 ;
+  box-shadow: 0 0 10px #309EC7;
 }
 </style>
