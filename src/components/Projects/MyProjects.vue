@@ -24,7 +24,7 @@ const imagePaths = `${publicPath}images/`
         Some projects I have worked on
       </span>
       <div class="div">
-        <div class="row mt-3">
+        <div class="row mt-3 project-list">
           <div class="col-md-6 mb-4" v-for="project in projectStore.projects" :key="project.id" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
             <div class="card">
               <img :src="imagePaths+ '/' +project.img" alt="project" class="m-3 mb-0">
@@ -52,6 +52,13 @@ span {
   background-color: #121B23;
   border: 1px solid #309EC7;
   border-radius: 20px;
+}
+.card:hover {
+  box-shadow: 0 0 15px #40D2FF;
+}
+img {
+  border: 1px solid #309EC7;
+  border-radius: 10px;
 }
 .card-title {
   color: #E5E9F0;
