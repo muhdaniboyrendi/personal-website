@@ -40,7 +40,7 @@ const handleSubmit = async () => {
       <div class="card">
         <div class="card-body p-3">
 
-          <div class="alert alert-dismissible fade show mt-1" role="alert" :class="{ 'd-none': !showAlert }">
+          <div class="alert alert-dismissible fade show" role="alert" :class="{ 'd-none': !showAlert }">
             Your message has been sent successfully!
             <button type="button" class="btn-close" @click="showAlert = false">
             </button>
@@ -49,15 +49,15 @@ const handleSubmit = async () => {
           <form @submit.prevent="handleSubmit" ref="contactForm">
             <div class="mb-3">
               <label for="nama" class="form-label">Your Name</label>
-              <input type="text" name="nama" class="form-control" id="nama" placeholder="Type your Name">
+              <input type="text" name="nama" class="form-control" id="nama" placeholder="Enter your Name">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" name="email" class="form-control" id="email" placeholder="Type your email">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
             <div class="mb-3">
               <label for="pesan" class="form-label">Message</label>
-              <textarea name="pesan" id="pesan" class="form-control" rows="5"></textarea>
+              <textarea name="pesan" id="pesan" class="form-control" rows="5" placeholder="Enter your message"></textarea>
             </div>
 
             <!-- button submit -->
@@ -96,6 +96,9 @@ label {
   color: #AAB6C5;
   border-radius: 10px;
 }
+.form-control::-webkit-input-placeholder {
+  color: #919ba7;
+}
 .btn {
   background-color: #121B23;
   border: 1px solid #309EC7;
@@ -111,9 +114,7 @@ label {
 .alert {
   background-color: #002214;
   border: 1px solid #00ff95;
-  color: #E5E9F0;
-}
-.btn-close {
+  border-radius: 10px;
   color: #E5E9F0;
 }
 </style>

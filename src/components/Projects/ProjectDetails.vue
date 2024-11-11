@@ -42,7 +42,7 @@ const sourceCode = currentProject.value.source
         </ul>
       </div>
     </div>
-    <router-link :to="{ name: 'projects' }" class="btn" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500">Kembali</router-link>
+    <router-link :to="{ name: 'projects' }" class="btn" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500">&laquo; Back</router-link>
   </div>
 </template>
 
