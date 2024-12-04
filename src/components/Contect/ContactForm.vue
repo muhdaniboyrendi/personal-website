@@ -36,7 +36,8 @@ const handleSubmit = async () => {
 
 <template>
   <div class="row my-5">
-    <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+
+    <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
       <div class="card">
         <div class="card-body p-3">
 
@@ -76,8 +77,13 @@ const handleSubmit = async () => {
         </div>
       </div>
     </div>
+
     <div class="col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
+      <div class="card">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1639.0569505779724!2d111.06235675316086!3d-7.657041144724583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a20e9c1e6be51%3A0x5e8b5175c71610e2!2s83V6%2B3XM%2C%20Banajarsari%2C%20Koripan%2C%20Kec.%20Matesih%2C%20Kabupaten%20Karanganyar%2C%20Jawa%20Tengah%2057781!5e0!3m2!1sid!2sid!4v1733295451034!5m2!1sid!2sid" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -86,6 +92,7 @@ const handleSubmit = async () => {
   background-color: #121B23;
   border: 1px solid #309EC7;
   border-radius: 20px;
+  overflow: hidden;
 }
 label {
   color: #E5E9F0;

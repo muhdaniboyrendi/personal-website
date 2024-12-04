@@ -2,7 +2,7 @@
 import SkillItems from './SkillItems.vue';
 
 const langItems = ['HTML', 'CSS', 'JavaScript', 'PHP']
-const feItems = ['Vue JS', 'Bootstrap', 'Livewire']
+const feItems = ['Vue JS', 'Tailwind CSS', 'Bootstrap', 'Livewire']
 const beItems = ['Laravel', 'MySQL', 'SQLite']
 </script>
 

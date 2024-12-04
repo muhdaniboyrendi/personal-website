@@ -14,7 +14,7 @@
           <span class="title">SoloNet</span>
           <span class="badge float-end p-2">Past</span>
           <p class="mt-3">
-            Web Developer | February 2020 - April 2020 | Internship
+            Web Developer | Internship
           </p>
           <p>
             Develop a website using PHP Native dan CodeIgniter framework, presentation of work progress every week.

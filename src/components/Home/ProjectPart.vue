@@ -2,8 +2,9 @@
 const publicPath = import.meta.env.BASE_URL
 
 const imagePaths = {
-  grasius: `${publicPath}images/grasius.PNG`,
-  onlineShop: `${publicPath}images/online-shop.PNG`,
+  weddingInvitation: `${publicPath}images/projects/wedding-invitation.png`,
+  grasius: `${publicPath}images/projects/grasius.PNG`,
+  onlineShop: `${publicPath}images/projects/online-shop.PNG`,
   icon: `${publicPath}images/icons/icon1.svg`
 }
 </script>
@@ -17,6 +18,15 @@ const imagePaths = {
   <RouterLink to="/projects" class="btn btn-sm project-btn" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500" aria-current="page">View all projects &raquo;</RouterLink>
   <div class="card-list">
     <div class="row mt-3 mb-5">
+      <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
+        <div class="card">
+          <img :src="imagePaths.weddingInvitation" alt="project" class="m-3 mb-0">
+          <div class="card-body">
+            <h5 class="card-title">Wedding Invitation</h5>
+            <p class="card-text">Website for wedding invitation. Developed with Bootstrap</p>
+          </div>
+        </div>
+      </div>
       <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1500">
         <div class="card">
           <img :src="imagePaths.grasius" alt="project" class="m-3 mb-0">

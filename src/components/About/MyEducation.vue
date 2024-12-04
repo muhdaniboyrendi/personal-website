@@ -14,7 +14,7 @@
           <span class="title">SMK Negeri 2 Karanganyar</span>
           <span class="badge float-end p-2">Past</span>
           <p class="mt-3">
-            Software Engineering | June 2018 - June 2021
+            Software Engineering
           </p>
           <p>
             Learn about programming fundamentals, data structures, algorithm, logic, and more. Some of the languages learned include HTML, CSS, PHP, Java, Visual Basic, and others.

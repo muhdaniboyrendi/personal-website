@@ -24,7 +24,14 @@
         <div class="card-body ps-4 pt-4">
           <h5 class="mb-3">Hardware</h5>
           <ul>
-            <li><span>Laptop :</span> Acer Travelmate</li>
+            <li><span>Laptop :</span> Lenovo Thinkpad X1 Carbon</li>
+            <li><span>Specs</span> :
+              <ul>
+                <li><span>Processor :</span> Intel Core i5-8265U</li>
+                <li><span>RAM :</span> 8 GB</li>
+                <li><span>Storage :</span> NVMe 256 GB</li>
+              </ul>
+            </li>
             <li><span>Keyboard :</span> Rexus Legionare MX 5.1</li>
             <li><span>Mouse :</span> Logitech M100R</li>
             <li><span>Deskmat :</span> Orico</li>
