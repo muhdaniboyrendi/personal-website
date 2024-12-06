@@ -10,7 +10,8 @@ export const useProjectStore = defineStore('project', {
         description: 'Website for wedding invitation.',
         img: 'projects/wedding-invitation.png',
         tech: ['Bootstrap'],
-        source: 'https://github.com/muhdaniboyrendi/wedding-invitation'
+        source: 'https://github.com/muhdaniboyrendi/wedding-invitation',
+        link: 'https://muhdaniboyrendi.github.io/wedding-invitation/'
       },
       {
         id: 2,
@@ -18,7 +19,8 @@ export const useProjectStore = defineStore('project', {
         description: 'Application for student management and attendance system with QR Code.',
         img: 'projects/grasius.PNG',
         tech: ['Laravel', 'Livewire', 'Bootstrap'],
-        source: 'https://github.com/muhdaniboyrendi/jombang-kota'
+        source: 'https://github.com/muhdaniboyrendi/jombang-kota',
+        link: ''
       },
       {
         id: 3,
@@ -26,7 +28,8 @@ export const useProjectStore = defineStore('project', {
         description: 'Simple online shop application with admin and customer pages.',
         img: 'projects/online-shop.PNG',
         tech: ['Laravel', 'Bootstrap'],
-        source: 'https://github.com/muhdaniboyrendi/e-commerce'
+        source: 'https://github.com/muhdaniboyrendi/e-commerce',
+        link: ''
       },
       {
         id: 4,
@@ -34,7 +37,8 @@ export const useProjectStore = defineStore('project', {
         description: 'Simple Notes App with features add, delete, archive, and search notes.',
         img: 'projects/notes.PNG',
         tech: ['React JS', 'Bootstrap'],
-        source: 'https://github.com/muhdaniboyrendi/personal-notes'
+        source: 'https://github.com/muhdaniboyrendi/personal-notes',
+        link: ''
       },
       {
         id: 5,
@@ -42,7 +46,8 @@ export const useProjectStore = defineStore('project', {
         description: 'Simple Todo List App with featues add, delete, and done todo.',
         img: 'projects/todo-list.PNG',
         tech: ['Vue JS', 'Bootstrap'],
-        source: '#'
+        source: '#',
+        link: ''
       },
     ]
   }),
