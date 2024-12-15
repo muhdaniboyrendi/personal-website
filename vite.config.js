@@ -8,6 +8,13 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  server: {
+    host: '0.0.0.0',
+    port: 3000
+  },
+  preview: {
+    port: 3001
+  },
   base: '/personal-website/',
   resolve: {
     alias: {
